@@ -1,0 +1,24 @@
+.btn-primary {
+    background-color: darkorange;
+}
+
+.table-responsive {
+    border: 5px;
+    border-color: blue;
+    background-color: lightsalmon;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: orangered;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.th1 {
+    padding-left: 47px;
+
+}

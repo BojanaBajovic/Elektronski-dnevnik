@@ -1,0 +1,42 @@
+<div class="container">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <h2 >Lista nastavnika po predmetima</h2>
+                                                                               
+  <div class="table-responsive">          
+  <table class="table table-hover">
+    <thead >
+      <tr>
+          <th>Id</th>
+          <th>Ime i prezime nastavnika</th>
+          <th>Naziv predmeta</th>
+          <th>Fond casova</th>
+          <th>Razred</th>
+          <th>Odeljenje</th>
+          <!-- <th>Ocena</th> -->
+          <th class="th1">Izmeni</th>
+          <th class="th1">Obrisi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let drziNastavu of drzeNastavu">
+          <td>{{drziNastavu.id}}</td>
+          <td>{{drziNastavu.predaje.nastavnik.ime}}   {{drziNastavu.predaje.nastavnik.prezime}}</td>
+          <td>{{drziNastavu.predaje.predmet.nazivPredmeta}}</td>
+          <td>{{drziNastavu.predaje.predmet.fond}}</td>
+          <td>{{drziNastavu.odeljenje.razred.brojRazreda}}</td>
+          <td>{{drziNastavu.odeljenje.brojOdeljenja}}</td>
+          <!-- <td>[{{$index + 1}}] {{ucenik.ocena}}</td> -->
+          <td><button class="btn btn-primary">Edit</button></td>
+          <td><button class="btn btn-danger">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-primary" routerLink="/addUcenik">Novi DN</button>
+  </div>
+  <!-- <app-admin-form></app-admin-form> -->
+</div>
+
+

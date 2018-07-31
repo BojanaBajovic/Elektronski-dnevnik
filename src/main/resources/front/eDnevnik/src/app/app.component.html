@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="div-header">
+    
+    <h1>Projekat EDnevnik</h1><br><br>
+      <nav>
+        <td><button class="btn btn-primary" routerLink="/dashboard">Početna</button></td>
+        <td><button class="btn btn-primary" routerLink="/admin">Admin</button></td>
+        <td><button class="btn btn-primary" routerLink="/ucenik">Učenici</button></td>
+        <td><button class="btn btn-primary" routerLink="/roditelj">Roditelji</button></td>
+        <td><button class="btn btn-primary" routerLink="/nastavnik">Nastavnici</button></td>
+        
+        <!-- <a routerLink="/dashboard">Dashboard</a>
+        <a routerLink="/admin">Admin</a>
+        <a routerLink="/ucenik">Ucenik</a>
+        <a routerLink="/roditelj">Roditelj</a>
+        <a routerLink="/nastavnik">Nastavnik</a> -->
+      </nav><br>
+    
+    <router-outlet></router-outlet>
+  </div>
+  <div class="my-3 section-break">
+    <app-message-list></app-message-list>
+  </div>
+</div>
+

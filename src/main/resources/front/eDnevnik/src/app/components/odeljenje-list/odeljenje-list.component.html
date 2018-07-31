@@ -1,0 +1,36 @@
+<div class="container">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <h2 >Lista razreda i odeljenja</h2>
+                                                                                 
+    <div class="table-responsive">          
+    <table class="table table-hover">
+      <thead >
+        <tr>
+            <th>Id</th>
+            <th>Razred</th>
+            <th>Broj odeljenja</th>
+            <th class="th1">Izmeni</th>
+          <th class="th1">Obrisi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let odeljenje of odeljenja">
+            <td>{{odeljenje.id}}</td>
+            <td>{{odeljenje.razred.brojRazreda}}</td>
+            <td>{{odeljenje.brojOdeljenja}}</td>            
+            
+            <!-- <td>[{{$index + 1}}] {{ucenik.ocena}}</td> -->
+            <td><button class="btn btn-primary">Edit</button></td>
+            <td><button class="btn btn-danger">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-primary" routerLink="/addUcenik">Novo Odeljenje</button>
+    </div>
+    <!-- <app-admin-form></app-admin-form> -->
+  </div>
+  
+  

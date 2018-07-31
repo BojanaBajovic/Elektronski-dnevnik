@@ -1,0 +1,21 @@
+.img-banner {
+    width: 30%;
+    border:1px solid #1252b9;
+    margin-top: 1%;
+}
+
+.div-header {
+    padding-bottom: 2%;
+    border-bottom: 1px solid darkgray;
+}
+
+h1 {
+    color: orangered;
+    margin-left: 600px;
+}
+
+.btn {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}

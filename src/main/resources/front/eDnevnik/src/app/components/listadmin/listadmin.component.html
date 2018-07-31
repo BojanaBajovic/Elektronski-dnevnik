@@ -1,0 +1,36 @@
+<div class="container">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <h2 >ADMINISTRATORI</h2>
+                                                                               
+  <div class="table-responsive">          
+  <table class="table table-hover">
+    <thead >
+      <tr>
+          <th>Id</th>
+          <th>Username</th>
+          <th>Ime</th>
+          <th>Prezime</th>
+          <th class="th1">Izmeni</th>
+          <th class="th1">Obrisi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let admin of admini">
+          <td>{{admin.id}}</td>
+          <td>{{admin.username}}</td>
+          <td>{{admin.ime}}</td>
+          <td>{{admin.prezime}}</td>
+          <td><button class="btn btn-primary" routerLink="{{'/edit/' + admin.id}}">Edit</button></td>
+          <!-- <td><button class="btn btn-danger" routerLink="/delete/{{admin.id}}">Delete</button></td> -->
+          <!-- <button class="btn btn-outline-primary mr-1" type="delete" tabindex="6">Obrisi Admina</button> -->
+          <button class="btn btn-danger" (click)="delete(admin.id)">Delete</button>
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-primary" routerLink="/add">Novi Admin</button>
+  </div>
+  <!-- <app-admin-form></app-admin-form> -->
+</div>

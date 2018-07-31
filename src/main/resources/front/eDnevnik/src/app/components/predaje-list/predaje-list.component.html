@@ -1,0 +1,39 @@
+<div class="container">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <h2 >NASTAVNIK PREDAJE PREDMET</h2>
+                                                                               
+  <div class="table-responsive">          
+  <table class="table table-hover">
+    <thead >
+      <tr>
+          <th>Id</th>
+          <th>Ime</th>
+          <th>Prezime</th>
+          <th>Predmet</th>
+          <th class="th1">Izmeni</th>
+          <th class="th1">Obrisi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let predaje of predajep">
+          <td>{{predaje.id}}</td>
+          <td>{{predaje.nastavnik.ime}} </td>
+          <td>{{predaje.nastavnik.prezime}} </td>
+          <td>{{predaje.predmet.nazivPredmeta}}</td>
+
+          <td><button class="btn btn-primary">Edit</button></td>
+          <td><button class="btn btn-danger">Delete</button></td>
+          <!-- <td><button class="btn btn-primary" routerLink="{{'/edit/' + admin.id}}">Edit</button></td> -->
+          <!-- <td><button class="btn btn-danger" routerLink="/delete">Delete</button></td> -->
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-primary">New Predaje</button>
+  <!-- <button class="btn btn-primary" routerLink="/add">New Predaje</button> -->
+  </div>
+  <!-- <app-admin-form></app-admin-form> -->
+</div>
+
