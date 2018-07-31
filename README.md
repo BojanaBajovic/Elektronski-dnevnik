@@ -9,3 +9,6 @@ Project from the course - basic knowledge of Java programming
 ![slika 6](https://user-images.githubusercontent.com/39644906/43460970-80818ba8-94d2-11e8-8a19-dfcf6d3f43fa.jpg)
 ![slika 7](https://user-images.githubusercontent.com/39644906/43460987-8a76e360-94d2-11e8-8ad7-e0a355cc97e7.jpg)
 ![slika 8](https://user-images.githubusercontent.com/39644906/43460999-93aa07be-94d2-11e8-8918-6ab07db0b8a8.jpg)
+![slika 9](https://user-images.githubusercontent.com/39644906/43461545-10b74cb6-94d4-11e8-8ec4-8547db33cf24.jpg)
+![slika 10](https://user-images.githubusercontent.com/39644906/43461551-13bcb450-94d4-11e8-9f50-cabc2ab106f8.jpg)
+![slika 11](https://user-images.githubusercontent.com/39644906/43461558-16f2ea5e-94d4-11e8-87d5-61a1f2a40cd0.jpg)
